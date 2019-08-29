@@ -47,8 +47,10 @@ END//
 DELIMITER ;
 
 
-CALL CRUDUsuario (1,'Alguien','hue',2);
-CALL CRUDProducto(1,'Algo','Alguna ruta', 10000,2);
+CALL CRUDUsuario (1,'Marcelo','123',1);
+CALL CRUDProducto(1,'Hamb','hamburguesa', 1000,1);
+CALL CRUDProducto(1,'Coca','cocaDeLitro', 2000,1);
+CALL CRUDProducto(1,'Mega','heladoMega', 3000,1);
 
 -- DROP DATABASE bd_pizarroWeb;
 

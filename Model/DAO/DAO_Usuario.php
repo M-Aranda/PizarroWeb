@@ -70,4 +70,21 @@ class DAO_Usuario extends Conexion implements DAO {
         return $obj;
     }
 
+    public function buscarCoincidenciaDeUsuario($nombre, $contrasenia) {
+        $this->c->conectar();
+        $query = "SELECT * FROM Usuario WHERE nombre='" . $nombre . "' AND contrasenia='" . $contrasenia . "' ;";
+
+        $obj = new Usuario(1, 'No encontrado', 'Invalido');
+
+        $rs = $this->c->ejecutar($query);
+        while ($reg = $rs->fetch_array()) {
+
+            $obj->setId($reg[0]);
+            $obj->setNombre($reg[1]);
+            $obj->setContrasenia($reg[2]);
+        }
+        $this->c->desconectar();
+        return $obj;
+    }
+
 }

@@ -7,7 +7,7 @@
         <title>Inicio de Sesión</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     </head>
-    <body>
+    <body >
 
         <br>
         <br>
@@ -18,17 +18,17 @@
         <br>
         <br>
 
-        <div class="container bg-white text-dark rounded">
-            <form action="Controller/CheckLogin.php" method="post">
+        <div class="container bg-red text-dark rounded">
+            <form action="../Controller/CheckLogin.php" method="post">
                 <div class="form-group">
                     <br>
-                    <label for="usuario">RUN:</label>
-                    <input class="form-control" type="text" name="usuario" id="usuario" placeholder="Ingrese su RUN" autocomplete="off" required>
+                    <label for="usuario">Nombre:</label>
+                    <input class="form-control" type="text" name="txtNombre" id="txtNombre" placeholder="Ingrese su nombre" autocomplete="off" required>
                 </div>
 
                 <div class="form-group">
                     <label for="password">Contraseña:</label>
-                    <input type="password" class="form-control" id="password" name="password" autocomplete="off" required>
+                    <input type="password" class="form-control" id="txtPass" name="txtPass" autocomplete="off" required>
                 </div>
 
               
